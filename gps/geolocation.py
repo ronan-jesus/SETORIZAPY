@@ -14,19 +14,24 @@ class Geolocation():
     @classmethod
     def UTM2COORDS(self, listUTM):
         """
-        Converte cada conjunto de coordenadas UTM (x, y) dentra da lista, para
+        Converte cada conjunto de coordenadas UTM (x, y) dentro da lista, para
         coordenadas geograficas (latitude, longitude)
 
         Parameters
         ----------
-        listUTM : TYPE
-            DESCRIPTION.
+        listUTM : LIST
+            O parametro da funcao deve ser uma lista de lista contendo em cada
+            item da lista o par de coortenadas UTM a serem convertidas
+            [[UTMx, UTMy], [UTMx, UTMy], ... , [UTMx, UTMy]]
 
         Returns
         -------
-        list [(lat, lon),(lat, lon), ... , (lat, lon)]
+        LIST [(lat, lon),(lat, lon), ... , (lat, lon)]
+            Retorna uma lista de tuplas, contendo em cada tupla o par de
+            coordenadas convertidas em latitude e longitude.
 
         """
         
         for coord in listUTM:
             pass
+        
